@@ -1,14 +1,5 @@
-import { getEventsService } from "../services/events.service.js";
+import { getEvents } from "../repositories/events.repository.js";
 
-export const getEvents = async (req, res, next) => {
-  try {
-    const events = await getEventsService();
-
-    res.status(200).json({
-      status: "success",
-      payload: events
-    });
-  } catch (error) {
-    next(error);
-  }
+export const getEventsService = async () => {
+  return await getEvents();
 };
