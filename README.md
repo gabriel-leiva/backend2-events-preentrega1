@@ -158,7 +158,9 @@ backend2-events-preentrega1/
 │   │
 │   ├── models/
 │   │   ├── User.js
-│   │   └── Event.js
+│   │   ├── Event.js
+│   │   ├── Category.js
+│   │   └── Registration.js
 │   │
 │   ├── middlewares/
 │   │   └── error.middleware.js
